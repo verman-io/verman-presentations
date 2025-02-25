@@ -12,8 +12,6 @@ LaTeX dependencies:
 
 ## License
 
-https://github.com/vinibiavatti1/TuiCss is MIT licensed and used for the theme.
-
 Everything else is licensed under any of:
 
 - Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or <https://www.apache.org/licenses/LICENSE-2.0>)
