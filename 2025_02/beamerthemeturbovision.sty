@@ -1,0 +1,87 @@
+% beamerthemeturbovision.sty
+\ProvidesPackage{beamerthemeturbovision}
+
+\usepackage{turbovisioncolortheme}
+\usepackage{turbovisionfonttheme}
+
+% Required packages
+\RequirePackage{colortbl}
+\RequirePackage{array}
+\RequirePackage{booktabs}
+\RequirePackage{xcolor}
+\RequirePackage{xparse} % For defining environments with optional arguments
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Frame title template
+\setbeamertemplate{frametitle}{%
+  \vskip-6pt%
+  \usebeamercolor[fg]{frametitle}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.5em,dp=0.5em]{frametitle}%
+    \hspace{1em}\insertframetitle%
+  \end{beamercolorbox}%
+}
+
+% Frame background
+\setbeamertemplate{background canvas}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=\paperheight]{background canvas}%
+  \end{beamercolorbox}%
+}
+
+% Custom environment: Window/Panel (using xparse to handle optional argument)
+\NewDocumentEnvironment{tvWindow}{o}{% begin code
+  \setbeamercolor{block title}{fg=tvforeground,bg=tvframe}%
+  \setbeamercolor{block body}{fg=tvforeground,bg=tvpanel}%
+  \setbeamerfont{block title}{size=\normalsize}%
+  \IfNoValueTF{#1}{%
+    \begin{block}{}%
+  }{%
+    \begin{block}{#1}%
+  }%
+}{% end code
+  \end{block}%
+}
+
+% Custom command: Button
+\NewDocumentCommand{\tvButton}{m}{%
+  \setbeamercolor{button}{fg=tvbuttontext,bg=tvbutton}%
+  \begin{beamercolorbox}[ht=1.5em,wd=5em,center,rounded=true]{button}%
+    \usebeamerfont{button}#1%
+  \end{beamercolorbox}%
+}
+
+% Custom command: Input Field
+\NewDocumentCommand{\tvInputField}{m}{%
+  \setbeamercolor{input field}{fg=tvinputfg,bg=tvinputbg}%
+  \begin{beamercolorbox}[ht=1.5em,wd=#1,center]{input field}%
+    \hspace*{#1}%
+  \end{beamercolorbox}%
+}
+
+% Table styles
+\AtBeginEnvironment{tabular}{%
+  \rowcolors{1}{tvpanel}{tvbackground}%
+  \arrayrulecolor{tvborder}%
+  \setlength{\arrayrulewidth}{0.5pt}%
+  \setlength{\tabcolsep}{6pt}%
+  \renewcommand{\arraystretch}{1.2}%
+}
+
+% Table header style command
+\newcommand{\tvTableHead}{%
+  \rowcolor{tvtable}%
+  \color{tvforeground}%
+  \bfseries%
+}
+
+% Alert box environment
+\NewDocumentEnvironment{tvAlert}{}{%
+  \par\medskip%
+  \setbeamercolor{alertbox}{fg=tvforeground,bg=tvalert}%
+  \begin{beamercolorbox}[wd=\textwidth,sep=1em]{alertbox}%
+    \usebeamerfont{alerted text}%
+}{%
+  \end{beamercolorbox}%
+  \medskip%
+}

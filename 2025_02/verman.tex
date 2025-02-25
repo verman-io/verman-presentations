@@ -1,0 +1,297 @@
+\PassOptionsToPackage{svgnames}{xcolor}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[aspectratio=169]{beamer}
+
+% Use the Turbo Vision theme
+\usepackage{beamerthemeturbovision}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx} % If you need to include images
+\usepackage{listings}
+
+%\definecolor{darkgreen}{RGB}{1,50,32}
+%\usepackage[dvipsnames,svgnames,tikz]{xcolor}
+%\usepackage{chronosys}
+\usepackage{tikz}
+%\usetikzlibrary{overlay-beamer-styles}
+% \tikzset{
+%    highlight on/.style={alt={#1{fill=red!80!black,%color=red!80!black}{fill=gray!30!white,color=gray!30!white}}},
+%}
+
+% Title Information
+\title{Deploy like it's the 1980s}
+\author{verMan.io}
+\date{}%\date{\today}
+\setbeamersize{text margin left=0pt}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Cross-platform}
+
+\begin{frame}{More than cross-platform}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+           \begin{enumerate}[<+->]
+                \item[0.] Docker (Linux)
+                \item Linux (native)
+                \item macOS
+                \item Windows
+                \item iOS
+                \item Android
+           \end{enumerate}
+        \end{column}
+        \begin{column}{0.5\textwidth}  %%<--- here
+            \begin{enumerate}[<+->]
+                \item[4.] FreeBSD, OpenBSD, NetBSD
+                \item[5.] HP/UX
+                \item[6.] SunOS, Open Solaris, illumos
+                \item[7.] z/OS
+                \item[8.] DOS
+                \item[9.] OS/360
+            \end{enumerate}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Windows and Panels}
+
+\begin{frame}{More than open-source}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+  \begin{tvWindow}[License]
+    \begin{center}
+    public domain
+    \end{center}
+  \end{tvWindow}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Website}
+\begin{frame}{Website}
+    \centering
+    \Large
+    \href{https://verMan.io}{https://verMan.io}
+\end{frame}
+
+\section{Features}
+
+\begin{frame}{Unique Value Proposition}
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+        
+  \begin{tvWindow}[UVP]
+    \begin{itemize}[<+->]
+      \item 1-click deploy
+      \item Cross-platform
+      \item Documentation generation
+      \item Cloud / host agnosticism
+    \end{itemize}
+  \end{tvWindow}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Market / competition}
+    \begin{columns}
+        \begin{column}{0.617\textwidth}
+    
+\begin{itemize}[<+->]
+    \item Docker\textemdash{}who \textbf{raised \$530M}\textemdash{}is roughly a direct competitor, that verMan optionally integrates with
+    \item Hashicorp\textemdash{}who \textbf{raised \$349M}\textemdash{}where verMan would particularly benefit its Vagrant and Packer
+    \item Ansible\textemdash{}who IBM \textbf{acquired for \$150M}\textemdash{}alongside Puppet, Chef, Salt, \&etc. would benefit from verMan
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Revenue opportunities}
+    \begin{columns}
+        \begin{column}{0.617\textwidth}
+    
+\begin{itemize}[<+->]
+    \item create a new lift-and-shift software-engineering consultancy (to/fro mainframes and clouds)
+    \item selling to companies building atop kubernetes (to alternatively build atop agnostic tech);
+    \item enter the as-a-Service market, or provide whitelabel as-a-Service-as-a-Service:
+    \begin{itemize}[<+->]
+        \item databases
+        \item MLOps
+        \item cpanel alternative
+        \item full PaaS\textellipsis{} or similar.
+    \end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Team}
+    \centering
+  Samuel Marks.
+
+  \vspace{2em}
+%  \begin{columns}
+ %   \begin{column}{0.917\textwidth}
+  \centering
+%  Try it today:
+  \begin{center}
+    \begin{tabular}{l}
+        Research fellow at Harvard Medical School / MEEI \\
+        PhD from University of Sydney \\
+        >800 GitHub repos \\
+        >300 of these sources not forks \\
+        top 10 contributor to Keras \\
+        Google Developer Expert for Machine Learning / Artificial Intelligence \\
+        >13 years of software-engineering consulting experience
+    \end{tabular}
+  \end{center}
+  
+  %  \end{column}
+%\end{columns}
+\end{frame}
+
+\begin{frame}{Roadmap}
+    \begin{columns}
+        \begin{column}{0.8\textwidth}
+            \begin{block}{Now}
+                Working version
+            \end{block}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{0.8\textwidth}
+            \begin{block}{+1 week}
+                Telemetry; JSON schema HTML input form on doc pages
+            \end{block}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{0.8\textwidth}
+            \begin{block}{+2 week}
+                Backups; more docs; more toolchains
+            \end{block}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{0.8\textwidth}
+            \begin{block}{+3 week}
+                PaaS type functionality; GitOps
+            \end{block}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{0.8\textwidth}
+            \begin{block}{+4 week}
+                More databases, toolchains, servers on more OSs and distributions
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Questions?}
+    \centering
+  Thank you for viewing this presentation!
+
+  \vspace{2em}
+%  \begin{columns}
+ %   \begin{column}{0.917\textwidth}
+  \centering
+%  Try it today:
+  \begin{center}
+    \begin{tabular}{l}
+        \href{mailto:samuel@offscale.io}{samuel@offscale.io}\\
+        \href{https://github.com/SamuelMarks/libscript}{https://github.com/SamuelMarks/libscript}\\
+        \href{https://github.com/verman-io}{https://github.com/verman-io}
+    \end{tabular}
+  \end{center}
+  
+  %  \end{column}
+%\end{columns}
+\end{frame}
+
+%\section{Advantage}
+
+% \begin{frame}{Buttons}
+%   \centering
+%   \tvButton{OK}
+%   \hspace{2em}
+%   \tvButton{Cancel}
+% \end{frame}
+
+% \section{Tables}
+
+% \begin{frame}{Tables}
+%   \begin{center}
+%     \begin{tabular}{l c r}
+%       \tvTableHead
+%       Name & Age & Occupation \tabularnewline
+%       \midrule
+%       Alice & 28 & Engineer \tabularnewline
+%       Bob & 34 & Designer \tabularnewline
+%       Charlie & 25 & Writer \tabularnewline
+%     \end{tabular}
+%   \end{center}
+% \end{frame}
+
+% \section{Forms}
+
+% \begin{frame}{Forms}
+%   \begin{tvWindow}[User Login]
+%     \begin{itemize}
+%       \item \textbf{Username:} \tvInputField{5cm}
+%       \item \textbf{Password:} \tvInputField{5cm}
+%     \end{itemize}
+
+%     \vspace{1em}
+%     \centering
+%     \tvButton{Login}
+%     \hspace{1em}
+%     \tvButton{Register}
+%   \end{tvWindow}
+% \end{frame}
+
+% \section{Alerts}
+
+% \begin{frame}{Alerts}
+%   \begin{tvAlert}
+%     \textbf{Warning:} This is an important alert message.
+%   \end{tvAlert}
+% \end{frame}
+
+% \section{Code Blocks}
+
+% % \begin{frame}{Sample Code Block}[fragile]
+% %   \begin{tvWindow}[Code Example]
+% %     \begin{lstlisting}[language=C]
+% % int main() {
+% %     printf("Hello, World!");
+% %     return 0;
+% % }
+% % \end{lstlisting}
+% %   \end{tvWindow}
+% % \end{frame}
+
+% \section{Menus}
+
+% \begin{frame}{Menus}
+%   \begin{tvWindow}[Main Menu]
+%     \begin{enumerate}
+%       \item New File
+%       \item Open File
+%       \item Save
+%       \item Exit
+%     \end{enumerate}
+%   \end{tvWindow}
+% \end{frame}
+
+\end{document}

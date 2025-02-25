@@ -1,0 +1,67 @@
+\ProvidesPackage{beamerthemeturbovision}
+\usepackage{turbovisioncolortheme}
+\usepackage{turbovisionfonttheme}
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{frametitle}{
+    \vskip-6pt
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1.5em,dp=0.5em]{frametitle}
+        \hspace{1em}\insertframetitle
+    \end{beamercolorbox}
+}
+
+\setbeamertemplate{background canvas}{
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\paperheight]{background canvas}
+    \end{beamercolorbox}
+}
+
+\newenvironment{tvWindow}[#citation-1](citation-1)[]{%
+    \setbeamercolor{block title}{fg=tvforeground,bg=tvframe}
+    \setbeamercolor{block body}{fg=tvforeground,bg=tvpanel}
+    \setbeamerfont{block title}{size=\normalsize}
+    \begin{block}{#1}
+}{%
+    \end{block}
+}
+
+\newcommand{\tvButton}[#citation-1](citation-1){%
+    \setbeamercolor{button}{fg=tvbuttontext,bg=tvbutton}
+    \begin{beamercolorbox}[ht=1.5em,wd=5em,center,rounded=true]{button}
+        \usebeamerfont{button}#1
+    \end{beamercolorbox}
+}
+
+\newcommand{\tvInputField}[#citation-1](citation-1){%
+    \setbeamercolor{input field}{fg=tvinputfg,bg=tvinputbg}
+    \begin{beamercolorbox}[ht=1.5em,wd=#1,center]{input field}
+        \hspace{#1}
+    \end{beamercolorbox}
+}
+
+\AtBeginEnvironment{tabular}{
+    \rowcolors{1}{tvpanel}{tvbackground}
+    \arrayrulecolor{tvborder}
+    \setlength{\arrayrulewidth}{0.5pt}
+    \setlength{\tabcolsep}{6pt}
+    \renewcommand{\arraystretch}{1.2}
+}
+
+\newcommand{\tvTableHead}{%
+    \rowcolor{tvtable}
+    \color{tvforeground}
+    \bfseries
+}
+
+\setbeamertemplate{alertmessage}{
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2cm,center,sep=1em]{alerted text}
+        \usebeamerfont{alerted text}
+        \insertalertmessage
+    \end{beamercolorbox}
+}
+
+\newcommand{\tvAlert}[#citation-1](citation-1){%
+    \setbeamertemplate{alerted text}{}
+    \def\insertalertmessage{#1}
+    \usebeamertemplate*{alertmessage}
+}
