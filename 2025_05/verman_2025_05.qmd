@@ -1,0 +1,264 @@
+---
+title: "Deploy like it's the 1980s"
+author: "verMan.io"
+format:
+  revealjs:
+    css: revealjs-tuicss.css
+    transition: fade
+    slideNumber: true
+    controls: true
+    aspectratio: 16:9
+    fontSize: 1.6rem   # Slightly reduced for better fit
+    incremental: false # we do incremental manually where desired
+    fragments: true
+---
+
+# Deploy like it's the 1980s
+verMan.io
+
+## https://github.com/SamuelMarks
+
+<div style="text-align:center; font-size:1.4rem;">
+
+Samuel Marks.
+
+<br><br>
+
+<table style="margin:auto; font-size:1.1rem;">
+<tr><td>
+- Research fellow at Harvard Medical School / MEEI  
+- PhD from the University of Sydney  
+- >800 GitHub repos  
+- >300 of these sources not forks  
+- top 10 contributor to Keras  
+- Google Developer Expert for Machine Learning / Artificial Intelligence  
+- >13 years of software-engineering consulting experience  
+</td></tr>
+</table>
+
+</div>
+
+## Cross-platform
+
+## More than cross-platform
+
+<div class="columns">
+
+<div class="column" style="width:50%">
+
+::: incremental
+1. Docker (Linux)  
+2. Linux (native)  
+3. macOS  
+4. Windows  
+5. iOS  
+6. Android  
+:::
+
+</div>
+
+<div class="column" style="width:50%">
+
+::: incremental
+7. FreeBSD, OpenBSD, NetBSD  
+8. HP/UX  
+9. SunOS, Open Solaris, illumos  
+10. z/OS  
+11. DOS  
+12. OS/360  
+:::
+
+</div>
+
+</div>
+
+## Cross-platform
+
+::: incremental
+- Docker
+:::
+
+## More than Docker
+
+![](images/virt.png){width=80%}
+
+## Multicloud
+
+## More than multicloud
+
+<div class="columns">
+
+<div class="column" style="width:33%">
+
+::: incremental
+1. Amazon Web Services (AWS)  
+2. Microsoft Azure  
+3. Google Cloud  
+4. IBM Cloud  
+5. Alibaba Cloud Elastic Compute Service (ECS)  
+6. Aurora Compute  
+7. Microsoft Azure (ARM)  
+8. cloudscale.ch  
+9. CloudSigma  
+10. Apache CloudStack  
+:::
+
+</div>
+
+<div class="column" style="width:33%">
+
+::: incremental
+11. DigitalOcean  
+12. Dimension Data (NTT Ltd.)  
+13. Exoscale  
+14. Gandi.net  
+15. gridscale  
+16. Ikoula  
+17. Internet Solutions  
+18. Kamatera  
+19. libvirt  
+20. Maxihost  
+21. Nimbus  
+22. NTT America  
+:::
+
+</div>
+
+<div class="column" style="width:33%">
+
+::: incremental
+23. NTT Communications Cloud Infrastructure Services  
+24. OnApp  
+25. OpenStack  
+26. Outscale  
+27. Outscale Inc.  
+28. Outscale SAS  
+29. OVHcloud  
+30. Rackspace  
+31. Scaleway  
+32. UpCloud  
+33. VMware vCloud  
+34. Vultr  
+:::
+
+</div>
+
+</div>
+
+## Windows and Panels
+
+## More than open-source
+
+> **License**
+
+> public domain
+{: .tui-window}
+
+## Website
+
+<div style="text-align:center; font-size:1.8rem;">
+[https://verMan.io](https://verMan.io)
+</div>
+
+## Unique Value Proposition
+
+<div class="columns">
+
+<div class="column" style="width:50%">
+  
+<ul class="incremental tui-window">
+<li>1-click deploy</li>
+<li>2-click multicloud deploy</li>
+<li>Cross-platform</li>
+<li>Documentation generation</li>
+<li>Cloud / host agnostic</li>
+</ul>
+
+</div>
+
+</div>
+
+## Revenue opportunities
+
+<div class="columns">
+
+<div class="column" style="width:62%">
+
+<ul class="incremental">
+<li>create a new lift-and-shift software-engineering consultancy (to/fro mainframes and clouds)</li>
+<li>selling to companies building atop kubernetes (to alternatively build atop agnostic tech);</li>
+<li>enter the as-a-Service market, or provide whitelabel as-a-Service-as-a-Service:
+  <ul>
+  <li>databases</li>
+  <li>MLOps</li>
+  <li>cpanel alternative</li>
+  <li>full PaaS… or similar.</li>
+  </ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+## Conclusion
+
+## Roadmap
+
+```{=html}
+<div class="roadmap-timeline">
+
+  <div class="roadmap-step fragment">
+    <div class="roadmap-content">
+      <div style="font-weight:bold; font-size:1.2rem; margin-bottom:0.2rem;">Now</div>
+      Working version
+    </div>
+  </div>
+
+  <div class="roadmap-step fragment">
+    <div class="roadmap-content">
+      <div style="font-weight:bold; font-size:1.2rem; margin-bottom:0.2rem;">+1 week</div>
+      Telemetry (OpenTelemetry linked throughout; with multiple dashboarding and metric-gathering systems)
+    </div>
+  </div>
+
+  <div class="roadmap-step fragment">
+    <div class="roadmap-content">
+      <div style="font-weight:bold; font-size:1.2rem; margin-bottom:0.2rem;">+2 weeks</div>
+      Backups; more docs; more toolchains
+    </div>
+  </div>
+
+  <div class="roadmap-step fragment">
+    <div class="roadmap-content">
+      <div style="font-weight:bold; font-size:1.2rem; margin-bottom:0.2rem;">+3 weeks</div>
+      PaaS type functionality; GitOps
+    </div>
+  </div>
+
+  <div class="roadmap-step fragment">
+    <div class="roadmap-content">
+      <div style="font-weight:bold; font-size:1.2rem; margin-bottom:0.2rem;">+4 weeks</div>
+      More databases, toolchains, servers on more OSs and distributions
+    </div>
+  </div>
+
+</div>
+```
+
+## Questions?
+
+<div style="text-align:center;">
+
+Thank you for viewing &amp; attending this presentation!
+
+<br><br>
+
+<table style="margin:auto;">
+<tr><td>
+- [samuel@offscale.io](mailto:samuel@offscale.io)  
+- [https://github.com/SamuelMarks/libscript](https://github.com/SamuelMarks/libscript)  
+- [https://github.com/verman-io](https://github.com/verman-io)  
+</td></tr>
+</table>
+
+</div>

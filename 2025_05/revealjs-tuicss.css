@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "DOS";
+    src: local("Lucida Console"), monospace;
+}
+
+.reveal {
+    font-family: "Lucida Console", "DOS", monospace !important;
+    font-size: 1.6rem !important;
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(168, 168, 168);
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+}
+
+.reveal .slides section {
+    background-color: rgb(0, 0, 168) !important;
+    color: white !important;
+    box-shadow: 10px 10px black !important;
+    border: 2px solid white !important;
+    border-radius: 0 !important;
+    padding: 1.5rem 2rem !important;
+    font-weight: normal;
+    overflow-y: auto;
+    /*  max-height: 85vh; */
+    box-sizing: border-box;
+    user-select: text;
+    /* min-height: auto; */
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+    color: rgb(255, 255, 0) !important;
+    font-weight: normal !important;
+    border-bottom: 2px double white;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.25rem;
+    user-select: none;
+    text-shadow: none !important;
+}
+
+.reveal p,
+.reveal li {
+    color: rgb(168, 168, 168) !important;
+    text-shadow: none !important;
+}
+
+.reveal a {
+    color: rgb(0, 168, 0) !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    user-select: text;
+    cursor: pointer;
+}
+
+.reveal a:hover {
+    color: rgb(0, 255, 255) !important;
+    text-decoration: underline !important;
+}
+
+.reveal ul,
+.reveal ol {
+    list-style: none !important;
+    padding-left: 2rem !important;
+}
+
+.reveal ul li::before {
+    content: "[·] ";
+    color: rgb(255, 255, 0);
+    margin-right: 0.5rem;
+    user-select: none;
+}
+
+.reveal code,
+.reveal pre {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 0) !important;
+    font-family: "Lucida Console", monospace !important;
+    border-radius: 0 !important;
+    white-space: pre-wrap !important;
+    padding: 0.2em 0.5em !important;
+    box-shadow: none !important;
+}
+
+.reveal pre {
+    padding: 1rem !important;
+    border: 2px solid rgb(168, 168, 168) !important;
+    box-shadow: 10px 10px black !important;
+    margin: 1rem 0 !important;
+    overflow-x: auto !important;
+}
+
+.reveal blockquote {
+    border-left: 6px double white !important;
+    padding-left: 1rem !important;
+    margin-left: 0 !important;
+    color: rgb(255, 255, 0) !important;
+    font-style: italic !important;
+    background-color: rgb(0, 0, 168) !important;
+    box-shadow: 10px 10px black !important;
+    user-select: text;
+}
+
+.reveal table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+    background-color: rgb(0, 0, 168) !important;
+    border: 2px solid rgb(168, 168, 168) !important;
+    color: white !important;
+    font-family: "Lucida Console", monospace !important;
+    user-select: text;
+}
+
+.reveal thead th {
+    background-color: rgb(168, 168, 0) !important;
+    color: black !important;
+    text-align: center !important;
+    padding: 0.5rem 0.8rem !important;
+    border: 2px solid black !important;
+}
+
+.reveal tbody td {
+    border-right: 2px solid rgb(168, 168, 168) !important;
+    padding: 0.3rem 0.6rem !important;
+    vertical-align: top !important;
+}
+
+.reveal tbody tr:nth-child(even) {
+    background-color: rgb(0, 0, 112) !important;
+}
+
+.reveal code.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.2em;
+    background-color: rgb(0, 255, 255);
+    animation: blink 1.2s steps(2, start) infinite;
+    vertical-align: bottom;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.tui-window {
+    background-color: rgb(0, 0, 168);
+    padding: 12px 18px;
+    box-shadow: 10px 10px black !important;
+    color: white !important;
+    font-family: "Lucida Console", monospace !important;
+    border-radius: 0 !important;
+    user-select: text;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.tui-block {
+    background-color: rgb(168, 168, 0);
+    color: black !important;
+    padding: 12px 16px;
+    margin-bottom: 1rem;
+    border: 2px double black;
+    font-family: "Lucida Console", monospace !important;
+    box-shadow: 5px 5px black;
+    user-select: text;
+    border-radius: 0 !important;
+}
+
+.roadmap-timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    padding-left: 40px;
+    font-family: "Lucida Console", monospace;
+    user-select: text;
+    counter-reset: step-counter;
+}
+
+.roadmap-timeline::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: rgb(255, 255, 0);
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.roadmap-step {
+    position: relative;
+    margin-bottom: 1.8rem;
+    padding-left: 35px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    counter-increment: step-counter;
+}
+
+.roadmap-step.visible,
+.roadmap-step.fragment.visible {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.roadmap-step::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+    background: rgb(255, 255, 0);
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 28px;
+    box-shadow: 2px 2px 2px black;
+    user-select: none;
+}
+
+.roadmap-content {
+    background-color: rgb(168, 168, 0);
+    color: black !important;
+    padding: 12px 18px;
+    border: 2px double black;
+    box-shadow: 5px 5px black;
+    border-radius: 0 !important;
+    font-family: "Lucida Console", monospace !important;
+    max-width: 550px;
+}
+
+.roadmap-step:hover .roadmap-content {
+    box-shadow: 8px 8px 8px black;
+    cursor: default;
+}
+
+.reveal .fragment {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.reveal .fragment.visible {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
