@@ -15,8 +15,15 @@ format:
       theme: dark
   html:
     mermaid:
-      theme: forest
+      theme: dark
+  pdf:
+    documentclass: scrartcl
+    papersize: letter
 ---
+
+# Open-source cross-platform multicloud deploys with|without Docker
+
+Simplifying—and futureproofing—software deployments.
 
 # Complexities 0/3
 
@@ -206,7 +213,7 @@ flowchart TD
 :::
 
 ::: {.column width="40%" .fragment}
-<h2>Orchestrator (of images and/or jobs)</h2>
+<h2>Orchestrator (of images, containers, and/or jobs)</h2>
 - Slurm
 - Mesos
 - Kubernetes
@@ -346,6 +353,17 @@ flowchart TD
 
 ::::
 
+## 37signals (honourable mention)
+
+```{=html}
+<iframe class="slide-deck"
+        height="100%"
+        width="100%"
+        style="min-height: 400px"
+        src="https://www.theregister.com/2025/05/09/37signals_cloud_repatriation_storage_savings/
+"></iframe>
+```
+
 ## More than open-source
 
 **License:** public domain
@@ -360,43 +378,40 @@ flowchart TD
 
 ## Unique Value Proposition
 
-<div class="columns">
-
-<div class="column" style="width:50%">
-  
-<ul class="incremental tui-window">
-<li>1-click deploy</li>
-<li>2-click multicloud deploy</li>
-<li>Cross-platform</li>
-<li>Documentation generation</li>
-<li>Cloud / host agnostic</li>
-</ul>
-
+<div style="width: 60%">
+  <ul class="incremental tui-window">
+    <li>1-click deploy</li>
+    <li>2-click multicloud deploy</li>
+    <li>Cross-platform</li>
+    <li>Documentation generation</li>
+    <li>Cloud / host agnostic</li>
+  </ul>
 </div>
 
-</div>
+## Website (embedded)
+
+```{=html}
+<iframe class="slide-deck"
+        height="100%"
+        width="100%"
+        style="min-height: 400px"
+        src="https://verMan.io"></iframe>
+```
 
 ## Revenue opportunities
 
-<div class="columns">
-
-<div class="column" style="width:62%">
-
 <ul class="incremental">
-<li>create a new lift-and-shift software-engineering consultancy (to/fro mainframes and clouds)</li>
-<li>selling to companies building atop kubernetes (to alternatively build atop agnostic tech);</li>
-<li>enter the as-a-Service market, or provide whitelabel as-a-Service-as-a-Service:
-  <ul>
-  <li>databases</li>
-  <li>MLOps</li>
-  <li>cpanel alternative</li>
-  <li>full PaaS… or similar.</li>
-  </ul>
-</li>
+  <li>create a new lift-and-shift software-engineering consultancy (to/fro mainframes and clouds)</li>
+  <li>selling to companies building atop kubernetes (to alternatively build atop agnostic tech);</li>
+  <li>enter the as-a-Service market, or provide whitelabel as-a-Service-as-a-Service:
+    <ul>
+    <li>databases</li>
+    <li>MLOps</li>
+    <li>cpanel alternative</li>
+    <li>full PaaS… or similar.</li>
+    </ul>
+  </li>
 </ul>
-
-</div>
-</div>
 
 ## Conclusion
 
@@ -445,18 +460,8 @@ flowchart TD
 
 ## Questions?
 
-<div style="text-align:center;">
-
 Thank you for viewing &amp; attending this presentation!
 
-<br><br>
-
-<table style="margin:auto;">
-<tr><td>
 - [samuel@offscale.io](mailto:samuel@offscale.io)  
 - [https://github.com/SamuelMarks/libscript](https://github.com/SamuelMarks/libscript)  
 - [https://github.com/verman-io](https://github.com/verman-io)  
-</td></tr>
-</table>
-
-</div>
