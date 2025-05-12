@@ -1,5 +1,6 @@
 .idea
 .vscode
+libs
 
 # General
 .DS_Store
